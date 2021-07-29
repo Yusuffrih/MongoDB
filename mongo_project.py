@@ -106,9 +106,9 @@ def delete_record():
         for k, v in doc.items():
             if k != "_id":
                 print(k.capitalize() + ": " + v.capitalize())
-        
         print("")
-        confirmation = input("Is this the document that you want to delete? \nY or N > ")
+        confirmation = input(
+            "Is this the document that you want to delete?\nY or N > ")
         print("")
 
         if confirmation.lower() == "y":
